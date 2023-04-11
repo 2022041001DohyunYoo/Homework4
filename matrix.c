@@ -89,6 +89,8 @@ void transpose_matrix(int** a, int arow, int acol){//전치행렬 함수
     }
 
     print_matrix(temp, acol, arow);//임시배열 출력
+
+    free_matrix(temp, acol);
 }
 
 void multiply_matrix(int** a,int** b,  int arow, int acol, int brow, int bcol){//행렬곱 함수
@@ -113,6 +115,8 @@ void multiply_matrix(int** a,int** b,  int arow, int acol, int brow, int bcol){/
 
     }
     print_matrix(temp, arow, bcol); //임시 배열 출력
+
+    free_matrix(temp, arow);
 
     }
 
