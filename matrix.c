@@ -110,6 +110,7 @@ void multiply_matrix(int** a,int** b,  int arow, int acol, int brow, int bcol){/
                 temp[i][k] = sum;// 임시배열의 알맞은 위치에 sum의 값 집어넣기
                 sum = 0;//sum 초기화
         }
+
     }
     print_matrix(temp, arow, bcol); //임시 배열 출력
 
@@ -126,7 +127,8 @@ void multiply_matrix(int** a,int** b,  int arow, int acol, int brow, int bcol){/
 
 int main(){
 
-    int arow, acol, brow, bcol, task, m;
+    int arow, acol, brow;
+    int bcol, task, m;
 
     int n = 1;
 
@@ -224,7 +226,7 @@ int main(){
     
     }
 
-   
+
 
 
 
